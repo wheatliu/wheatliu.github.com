@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Note Book</title>
+        <description>Note Book - wheat</description>
+        <link>http://wheatliu.github.io</link>
+        <link>http://wheatliu.github.io</link>
+        <lastBuildDate>2015-01-06T16:04:29+08:00</lastBuildDate>
+        <pubDate>2015-01-06T16:04:29+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>First Post</title>
+                <description>
+</description>
+                <link>http://wheatliu.github.io/2015/01/06/first-post</link>
+                <guid>http://wheatliu.github.io/2015/01/06/first-post</guid>
+                <pubDate>2015-01-06T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
