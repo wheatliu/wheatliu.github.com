@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: 什么是“对用户友好”
 ---
 
