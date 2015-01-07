@@ -1,4 +1,4 @@
-baseurl: http://creatist.cn/wangyin
+baseurl: http://blog.liuxizong.com
 permalink: /:year/:month/:day/:title
 markdown: rdiscount
 pygments: true
