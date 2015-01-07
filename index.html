@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 当然我在扯淡
+title: 博客测试
 ---
-
 <ul class="list-group">
-    <ul>
-    　　{% for post in site.posts %}
-    　　　　<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    　　{% endfor %}
+    {% for post in site.posts %}
+        <li class="list-group-item title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
 </ul>
