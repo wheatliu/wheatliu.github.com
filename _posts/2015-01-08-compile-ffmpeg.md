@@ -6,7 +6,7 @@ title: debian wheezy 编译安装ffmpeg 2.x
 debian wheezy 编译安装ffmpeg的shell 脚本
 
 参考如下
-
+_ _ _ _ _ _ _ _
 ``` bash
 #!/usr/bin/env bash
 # compile ffmpeg from source code
