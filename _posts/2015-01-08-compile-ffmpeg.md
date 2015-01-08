@@ -7,7 +7,7 @@ debian wheezy 编译安装ffmpeg的shell 脚本
 
 参考如下
 
-`
+``` bash
 #!/usr/bin/env bash
 # compile ffmpeg from source code
 # ffmpeg version: 2.5.1
@@ -81,4 +81,4 @@ cp tools/qt-faststart /usr/bin/
 
 # end 
 echo "All done!!! Have fun!!!"
-`
+````
