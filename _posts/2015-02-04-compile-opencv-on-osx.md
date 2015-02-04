@@ -2,7 +2,7 @@
 layout: blog
 title: osx 平台编译安装opencv3.0 beta 
 ---
-_ _ _ _ _ _ _
+
 . 安装cmake
 
 ``` bash
