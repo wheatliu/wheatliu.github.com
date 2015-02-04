@@ -59,6 +59,6 @@ In [2]:
 
 杂草一年一年在我心里长
 
-参考
+Reference
 ----
-[reference](https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu")
+1. [Installing OpenCV 3.0.0 alpha in Ubuntu](https://elementztechblog.wordpress.com/2014/)09/10/405/ 
