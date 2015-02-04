@@ -49,7 +49,14 @@ In [1]: import cv2
 
 In [2]:
 ```
-[0]: https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu"
 
 
 到这就完了.
+可是又有他妈的什么用呢
+大把的时间浪费在安装上了
+杂草一年一年在我心里长
+
+参考
+----
+
+[0]: https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu"
