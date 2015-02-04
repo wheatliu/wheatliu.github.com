@@ -18,7 +18,7 @@ unzip 3.0.0-beta.zip
 ```
 
 
-. [compile && install][1]
+. compile && install
 
 ``` bash
 cd opencv-3.0.0-beta
@@ -61,6 +61,4 @@ In [2]:
 
 参考
 ----
-
-   [1]:   https://elementztechblog.wordpress.com/2014/09/10/405/
-        "Installing OpenCV 3.0.0 alpha in Ubuntu"
+[reference](https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu")
