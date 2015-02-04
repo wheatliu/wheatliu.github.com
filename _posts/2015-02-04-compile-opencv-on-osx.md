@@ -18,7 +18,7 @@ unzip 3.0.0-beta.zip
 ```
 
 
-. compile && install
+. [compile && install][1]
 
 ``` bash
 cd opencv-3.0.0-beta
