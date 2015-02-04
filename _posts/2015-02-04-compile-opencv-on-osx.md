@@ -4,7 +4,7 @@ title: osx 平台编译安装opencv3.0 beta
 ---
 
 osx平台编译安装opencv3.0-beta
----------------------------
+— - - - - -
 . 安装cmake
 
 ``` bash
@@ -49,8 +49,7 @@ In [1]: import cv2
 
 In [2]:
 ```
+[0]: https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu"
 
 
 到这就完了.
-
-[0]: https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu"
