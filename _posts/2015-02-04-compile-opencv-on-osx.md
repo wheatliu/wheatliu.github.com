@@ -61,4 +61,6 @@ In [2]:
 
 参考
 ----
- [1]:  https://elementztechblog.wordpress.com/2014/09/10/405/ "Installing OpenCV 3.0.0 alpha in Ubuntu"
+
+   [1]:   https://elementztechblog.wordpress.com/2014/09/10/405/
+        "Installing OpenCV 3.0.0 alpha in Ubuntu"
