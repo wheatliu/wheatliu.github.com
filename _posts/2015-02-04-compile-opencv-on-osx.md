@@ -24,7 +24,7 @@ mkdir build && cd build
 git clone git@github.com:Itseez/opencv_contrib.git
 # warning： BUILD_NEW_PYTHON_SUPPORT=ON （python2.7）
 cmake -D OPENCV_EXTRA_MODULES_PATH=./opencv_contrib/modules \
-        -D CMAKE_INSTALL_PREFIX=/usr/local
+        -D CMAKE_INSTALL_PREFIX=/usr/local \
         -D CMAKE_BUILD_TYPE=RELEASE \
         -D BUILD_PYTHON_SUPPORT=ON \
         -D WITH_OPENGL=ON \
