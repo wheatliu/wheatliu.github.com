@@ -11,7 +11,7 @@ _____________________
 >* 静态编译ffmpeg
 ##1. 各类库信息
 |库名|  版本|库简介  |用途 |
-|-----|-------------:|:-------  |
+|:-----:|:----:|:----:|:-----:|
 |bzip2|1.0.6   |bzip2 is a freely available, patent free, high-quality data compressor||
 |faac|1.28|FAAC is an MPEG-4 and MPEG-2 AAC encoder|audio |
 |fdk-aac|0.1.4|fdk-aac - A standalone library of the Fraunhofer FDK AAC code from Android|audio|
@@ -36,8 +36,8 @@ _____________________
 |zlib|1.2.8|||
 ##2. ffmpeg信息
 |版本|2.7.2|
-|--------||
-|编译参数|--enable-postproc --enable-runtime-cpudetect --disable-ffserver --disable-debug --disable-shared --enable-static --enable-gpl --enable-nonfree --enable-libspeex --enable-version3 --enable-pthreads --enable-bzlib --enable-zlib --enable-libfreetype --enable-libfontconfig --enable-libopenjpeg --enable-libmp3lame --enable-libopus --enable-libvo_aacenc --enable-libfdk_aac --enable-libfaac --enable-libvo-amrwbenc --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libtheora --enable-libvorbis --enable-gray --enable-libx264 --enable-libx265 --enable-libxvid --enable-libvpx||
+|--------|-------|
+|编译参数|--enable-postproc --enable-runtime-cpudetect --disable-ffserver --disable-debug --disable-shared --enable-static --enable-gpl --enable-nonfree --enable-libspeex --enable-version3 --enable-pthreads --enable-bzlib --enable-zlib --enable-libfreetype --enable-libfontconfig --enable-libopenjpeg --enable-libmp3lame --enable-libopus --enable-libvo_aacenc --enable-libfdk_aac --enable-libfaac --enable-libvo-amrwbenc --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libtheora --enable-libvorbis --enable-gray --enable-libx264 --enable-libx265 --enable-libxvid --enable-libvpx|
 
 ##3. 下载地址
 
