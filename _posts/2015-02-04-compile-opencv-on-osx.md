@@ -21,10 +21,18 @@ unzip 3.0.0-beta.zip
 ``` bash
 cd opencv-3.0.0-beta
 mkdir build && cd build
+git clone git@github.com:Itseez/opencv_contrib.git
 # warning： BUILD_NEW_PYTHON_SUPPORT=ON （python2.7）
-cmake -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D \
-INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON\
- -D WITH_IPP=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
+cmake -D OPENCV_EXTRA_MODULES_PATH=./opencv_contrib/modules \
+        -D CMAKE_INSTALL_PREFIX=/usr/local \
+        -D CMAKE_BUILD_TYPE=RELEASE \
+        -D BUILD_PYTHON_SUPPORT=ON \
+        -D WITH_OPENGL=ON \
+        -D WITH_TBB=ON \
+        -D BUILD_EXAMPLES=ON \
+        -D BUILD_NEW_PYTHON_SUPPORT=ON \
+        -D WITH_V4L=ON \
+        -D WITH_QT=ON ..
 ```
 
 
