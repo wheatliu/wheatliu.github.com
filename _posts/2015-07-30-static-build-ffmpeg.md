@@ -66,7 +66,16 @@ _____________________
 root@stream:~# ffmpeg
 ffmpeg version 2.7.2 Copyright (c) 2000-2015 the FFmpeg developers
   built with gcc 4.9.2 (Debian 4.9.2-10)
-  configuration: --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib --pkg-config-flags=--static --extra-libs='-static -lpng' --enable-postproc --enable-runtime-cpudetect --disable-ffserver --disable-debug --disable-shared --enable-static --enable-gpl --enable-nonfree --enable-libspeex --enable-version3 --enable-pthreads --enable-bzlib --enable-zlib --enable-libfreetype --enable-libfontconfig --enable-libopenjpeg --enable-libmp3lame --enable-libopus --enable-libvo_aacenc --enable-libfdk_aac --enable-libfaac --enable-libvo-amrwbenc --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libtheora --enable-libvorbis --enable-gray --enable-libx264 --enable-libx265 --enable-libxvid --enable-libvpx
+  configuration: --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib 
+  --pkg-config-flags=--static --extra-libs='-static -lpng' --enable-postproc 
+  --enable-runtime-cpudetect --disable-ffserver --disable-debug --disable-shared 
+  --enable-static --enable-gpl --enable-nonfree --enable-libspeex --enable-version3 
+  --enable-pthreads --enable-bzlib --enable-zlib --enable-libfreetype 
+  --enable-libfontconfig --enable-libopenjpeg --enable-libmp3lame --enable-libopus 
+  --enable-libvo_aacenc --enable-libfdk_aac --enable-libfaac --enable-libvo-amrwbenc
+  --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libtheora 
+  --enable-libvorbis --enable-gray --enable-libx264 --enable-libx265 
+  --enable-libxvid --enable-libvpx
   libavutil      54. 27.100 / 54. 27.100
   libavcodec     56. 41.100 / 56. 41.100
   libavformat    56. 36.100 / 56. 36.100
