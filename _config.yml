@@ -1,6 +1,8 @@
 baseurl: http://blog.liuxizong.com
 permalink: /:year/:month/:day/:title
-markdown: rdiscount
 pygments: true
 date_format: "ordinal"
 subscribe_rss: /atom.xml
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
