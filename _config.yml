@@ -3,4 +3,7 @@ permalink: /:year/:month/:day/:title
 pygments: true
 date_format: "ordinal"
 subscribe_rss: /atom.xml
-markdown: kramdown
+markdown: Redcarpet
+markdown_ext:  markdown,mkd,mkdn,md
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data", "footnotes","space_after_headers","highlight","underline","quote","lax_spacing"]
