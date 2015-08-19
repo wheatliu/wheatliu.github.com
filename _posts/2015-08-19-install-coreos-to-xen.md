@@ -47,6 +47,9 @@ title: xen安装coreos
 ```
 
 3.创建cloud-config.yaml, 并放入nginx的主目录中
+    注意: 将配置文件中的$private_ipv4 替换成你配置的静态ip
+    原因如下:
+    Note: The $private_ipv4 and $public_ipv4 substitution variables referenced in other documents are only supported on Amazon EC2, Google Compute Engine, OpenStack, Rackspace, DigitalOcean, and Vagrant.
 
 ```bash
     # 这里这是简单配置,更多的配置信息参考配置文档
@@ -90,8 +93,8 @@ title: xen安装coreos
 4.创建coreos使用的磁盘
 
 ``` bash
-        # 是自己情况调整
-        lvcreate -n CoreOS -L 100G vg0
+    # 视自己情况调整
+    lvcreate -n CoreOS -L 100G vg0
 ```
 
 
