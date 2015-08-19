@@ -52,7 +52,9 @@ title: xen安装coreos
 
 原因如下:
 ```bash
-    Note: The $private_ipv4 and $public_ipv4 substitution variables referenced in other documents are only supported on Amazon EC2, Google Compute Engine, OpenStack, Rackspace, DigitalOcean, and Vagrant.
+    Note: The $private_ipv4 and $public_ipv4 substitution variables referenced
+            in other documents are only supported on Amazon EC2, Google
+            Compute Engine, OpenStack, Rackspace, DigitalOcean, and Vagrant.
 ```
 
 ```bash
