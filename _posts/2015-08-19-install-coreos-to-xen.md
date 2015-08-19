@@ -3,9 +3,6 @@ layout: blog
 title: xen安装coreos
 ---
 
-xen安装coreos
-___
-
 ## 环境信息
 
 - System: Debian GNU/Linux 8.1
