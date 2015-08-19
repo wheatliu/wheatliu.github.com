@@ -105,3 +105,9 @@ img {
 hr {
     color: LightGrey;
 }
+
+
+.codehilite .c {
+    color: #999988;
+    font-style: italic;
+}
