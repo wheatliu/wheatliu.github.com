@@ -118,8 +118,10 @@ title: xen安装coreos
         #
 
         bootloader = "/usr/local/lib/xen/bin/pygrub"
-        bootloader_args = "--kernel=/coreos/vmlinuz --ramdisk=/coreos/cpio.gz --output-directory=/mnt"
-        extra = " cloud-config-url=http://localhost/coreos/cloud-config.yaml console=tty0"
+        bootloader_args = "--kernel=/coreos/vmlinuz --ramdisk=/coreos/cpio.gz
+                         --output-directory=/mnt"
+        extra = " cloud-config-url=http://localhost/coreos/cloud-config.yaml
+                console=tty0"
 
         vcpus       = '1'
         memory      = '1000'
@@ -129,8 +131,8 @@ title: xen安装coreos
           Disk device(s).
         
         disk        = [
-                          'file:/srv/coreos/723.3.0/coreos_production_iso_image.iso,xvdd:cdrom,r',
-                          'phy:/dev/vg0/CoreOS,xvda,w',
+                      'file:/srv/coreos/723.3.0/coreos_production_iso_image.iso,xvdd:cdrom,r',
+                      'phy:/dev/vg0/CoreOS,xvda,w',
                       ]
 
         #disk        = [
