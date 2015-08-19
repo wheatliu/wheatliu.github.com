@@ -3,7 +3,7 @@ layout: blog
 title: xen安装coreos
 ---
 
-#xen安装coreos
+xen安装coreos
 ___
 
 ## 环境信息
@@ -46,7 +46,7 @@ ___
     # 重启nginx,使配置生效
 ```
 
-3. 创建cloud-config.yaml, 并放入nginx的主目录中
+3.创建cloud-config.yaml, 并放入nginx的主目录中
 
 ```bash
     # 这里这是简单配置,更多的配置信息参考配置文档
@@ -87,7 +87,7 @@ ___
 ```
 
  
-4. 创建coreos使用的磁盘
+4.创建coreos使用的磁盘
 
 ``` bash
         # 是自己情况调整
@@ -95,7 +95,7 @@ ___
 ```
 
 
-5. 创建coreos安装配置
+5.创建coreos安装配置
 
 ``` bash
         # 该文件位置 /etc/xen/CoreOS.cfg
@@ -147,13 +147,13 @@ ___
 ```
 
 
-6. 启动虚拟机
+6.启动虚拟机
 
 ``` bash
     xl create -c /etc/xen/CoreOS.cfg
 ```
 
-    我启动时,console日志卡在如下位置,不再打印虚拟机的启动日志
+我启动时,console日志卡在如下位置,不再打印虚拟机的启动日志
 
 ``` bash
     root@unix:~/VM/xen-4.5.1# xl create -c /etc/xen/CorsOs.cfg
@@ -162,8 +162,8 @@ ___
     xenconsole: Could not open tty '/dev/pts/4': No such file or directory
 ```
 
- 然后我通过按下`Control+]`键跳出console界面时,日志开始打印,我也没在查原因,日志卡住,就通过 按下`Control+]`键跳出console界面解决
- 启动成功后,会停在如下界面,同时会显示eth0的ip
+然后我通过按下`Control+]`键跳出console界面时,日志开始打印,我也没在查原因,日志卡住,就通过 按下`Control+]`键跳出console界面解决
+启动成功后,会停在如下界面,同时会显示eth0的ip
 
 ```
     This is coreos (Linux x86_64 4.0.5) 07:18:26
@@ -175,11 +175,11 @@ ___
     coreos login:
 ```
 
-7. 完成安装
+7.完成安装
     
-    因为虚拟机启动时已经从webserver上下载了cloud-config.yaml(步骤5)
-    现在可以直接通过无密码连接到服务器
-    登陆后如下所示:
+因为虚拟机启动时已经从webserver上下载了cloud-config.yaml(步骤5)
+现在可以直接通过无密码连接到服务器
+登陆后如下所示:
 ``` bash
     ➜  ~  ssh core@192.168.67.115
     Last login: Wed Aug 19 05:33:42 2015 from 192.168.67.41
@@ -188,7 +188,7 @@ ___
 
 ```
 
-    切换到root用户,查看磁盘信息
+切换到root用户,查看磁盘信息
 ``` bash
     core@coreos ~ $ sudo su - root
     coreos ~ #
@@ -210,7 +210,7 @@ ___
     coreos ~ #
 ```
 
-    下载cloud-config.yaml文件,修改coreos-install脚本,进行硬盘安装
+下载cloud-config.yaml文件,修改coreos-install脚本,进行硬盘安装
 ``` bash
     # 修改coreos-install 脚本 位置 /usr/bin/coreos-install
     # 做好备份
@@ -229,7 +229,7 @@ ___
     # 安装成功后,既可关闭虚拟机
 ```
 
-8. 修改coreos启动文件,完成正式启动
+8.修改coreos启动文件,完成正式启动
 ``` bash
     # 修改 /etc/xen/CoreOS.cfg
     #
