@@ -16,12 +16,13 @@ title: xen安装coreos
 
 1.下载所需文件
     
-    - [coreos_production_iso_image.iso](http://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso)
-    - [coreos_production_image.bin.bz2](http://stable.release.core-os.net/amd64-usr/current/coreos_production_image.bin.bz2)
-    - [coreos_production_image.bin.bz2.sig](http://stable.release.core-os.net/amd64-usr/current/coreos_production_image.bin.bz2.sig)
+    > * [coreos_production_iso_image.iso](http://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso)
+    > * [coreos_production_image.bin.bz2](http://stable.release.core-os.net/amd64-usr/current/coreos_production_image.bin.bz2)
+    > * [coreos_production_image.bin.bz2.sig](http://stable.release.core-os.net/amd64-usr/current/coreos_production_image.bin.bz2.sig)
     
 
 2.安装配置nginx
+
 ``` bash
     # 因为安装coreos过程中,安装脚本会去下载coreos_production_image.bin.bz2
     # 以及coreos_production_image.bin.bz2.sig文件,速度较慢,还可能需要翻墙
@@ -227,6 +228,7 @@ title: xen安装coreos
 ```
 
 8.修改coreos启动文件,完成正式启动
+
 ``` bash
     # 修改 /etc/xen/CoreOS.cfg
     #
