@@ -162,16 +162,6 @@ title: xen安装coreos
     xl create -c /etc/xen/CoreOS.cfg
 ```
 
-我启动时,console日志卡在如下位置,不再打印虚拟机的启动日志
-
-``` bash
-    root@unix:~/VM/xen-4.5.1# xl create -c /etc/xen/CorsOs.cfg
-    Parsing config from /etc/xen/CorsOs.cfg
-    WARNING: Specifying "bootloader_args" as a string is deprecated. Please use a list of arguments.
-    xenconsole: Could not open tty '/dev/pts/4': No such file or directory
-```
-
-然后我通过按下`Control+]`键跳出console界面时,日志开始打印,我也没在查原因,日志卡住,就通过 按下`Control+]`键跳出console界面解决
 启动成功后,会停在如下界面,同时会显示eth0的ip
 
 ```
