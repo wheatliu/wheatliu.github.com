@@ -164,14 +164,14 @@ title: xen安装coreos
     xl create -c /etc/xen/CoreOS.cfg
 ```
 
-启动成功后,会停在如下界面,同时会显示eth0的ip
+启动成功后,会停在如下界面,同时会显示eth0的ip, 此时是dhcp分配的ip,非我们制定的ip
 
 ```
     This is coreos (Linux x86_64 4.0.5) 07:18:26
     SSH host key: 76:8c:be:83:51:9e:0d:b0:3d:9a:54:51:91:5d:6b:c8 (DSA)
     SSH host key: d2:14:fa:61:ab:c7:dc:1b:98:b1:ac:c4:b4:b8:44:c8 (ED25519)
     SSH host key: fc:6d:4b:90:85:a6:ef:8a:83:85:bf:fe:c6:ab:dd:d2 (RSA)
-    eth0: 192.168.1.115 fe80::216:3eff:fe4a:bed2
+    eth0: 192.168.1.65 fe80::216:3eff:fe4a:bed2
 
     coreos login:
 ```
@@ -182,7 +182,7 @@ title: xen安装coreos
 现在可以直接通过无密码连接到服务器
 登陆后如下所示:
 ``` bash
-    ➜  ~  ssh core@192.168.67.115
+    ➜  ~  ssh core@192.168.1.65
     Last login: Wed Aug 19 05:33:42 2015 from 192.168.67.41
     CoreOS stable (723.3.0)
     core@coreos ~ $
@@ -214,8 +214,8 @@ title: xen安装coreos
 下载cloud-config.yaml文件,修改coreos-install脚本,进行硬盘安装
 ``` bash
     # 修改coreos-install 脚本 位置 /usr/bin/coreos-install
-    # 做好备份
-
+    cp  /usr/bin/coreos-install .
+    vim coreos-install
     # 找到以下位置
     if [[ -z "${BASE_URL}" ]]; then
         BASE_URL="http://${CHANNEL_ID}.release.core-os.net/amd64-usr"
@@ -226,7 +226,7 @@ title: xen安装coreos
     # 替换完成后,下载cloud-config.yaml
     wget http://192.168.67.111/coreos/cloud-config.yaml
     # 开始安装
-    coreos-install -d /dev/xvda -C stable -c ./cloud-config.yaml
+    ./coreos-install -d /dev/xvda -C stable -c ./cloud-config.yaml
     # 安装成功后,既可关闭虚拟机
 ```
 
@@ -266,4 +266,11 @@ title: xen安装coreos
         on_crash    = 'restart'
 ```
 
-重新启动coreos虚拟机,至此,xen安装CoreOS完成. 有疑问请邮件: wheatsliu#gmail.com
+重新启动coreos虚拟机,至此,xen安装CoreOS完成.
+
+```bash
+    # ssh至cloud-config.yaml制定的ip即可
+    ssh core@192.168.1.115
+```
+
+ 有疑问请邮件: wheatsliu#gmail.com
