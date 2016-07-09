@@ -1,4 +1,4 @@
-baseurl: http://blog.liuxizong.com
+baseurl: http://blog.liuxizong.xyz
 permalink: /:year/:month/:day/:title
 pygments: true
 date_format: "ordinal"
